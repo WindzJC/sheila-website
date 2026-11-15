@@ -6,10 +6,10 @@
   <title>Miriam Kam Weisbrod | Poems From My Heart &amp; Children's Poetry</title>
   <meta name="description" content="Explore Poems From My Heart by Miriam Kam Weisbrod, edited by Sheila N. Weisbrod, alongside A Rainbow of Poetry for Children and the audiobook edition.">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="theme-color" content="#30262c">
+  <meta name="theme-color" content="#1c1b10">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Miriam Kam Weisbrod | Poems From My Heart">
-  <meta property="og:description" content="A rose between pages. A portrait on a wall. Discover the poetry of Miriam Kam Weisbrod and the books that hold it.">
+  <meta property="og:description" content="A rose between pages. A portrait of a soldier. Discover the poetry of Miriam Kam Weisbrod and the books that hold it.">
   <meta property="og:image" content="assets/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -18,125 +18,220 @@
   <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" href="assets/fonts/literata-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script src="rainbow.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <p class="concept-banner">Homepage concept by Astra Productions</p>
+
   <header class="site-header">
-    <div class="header-inner wrap">
-      <a class="wordmark" href="#top"><span class="wordmark-monogram" aria-hidden="true">mw.</span><span>Miriam Kam Weisbrod<small>Poetry</small></span></a>
-      <nav aria-label="Main navigation"><a href="#poems">The poems</a><a href="#children">For children</a><a href="#editions">Books &amp; audio</a></nav>
-    </div>
+    <a class="wordmark" href="#top">Miriam Kam Weisbrod</a>
+    <nav aria-label="Main navigation">
+      <a href="#poems">Poems</a><a href="#children">Children</a><a href="#listen">Listen</a><a href="#books">Books</a>
+    </nav>
   </header>
+
   <main id="main" tabindex="-1">
-    <section class="folio-hero" aria-labelledby="book-title">
-      <div class="hero-grain" aria-hidden="true"></div>
-      <div class="hero-inner wrap">
-        <div class="hero-index" aria-hidden="true"><span>Volume / 01</span><span>Poetry · 2015</span></div>
-        <div class="hero-type">
-          <p class="hero-kicker">The poetry of Miriam Kam Weisbrod</p>
-          <h1 id="book-title"><span>Poems</span><em>From My</em><span>Heart</span></h1>
-          <p class="hero-credits">Written by <strong>Miriam Kam Weisbrod</strong><br>Edited by Sheila N. Weisbrod</p>
-          <p class="hero-thesis">A rose between pages. A portrait on the wall. In Miriam’s poetry, memory has things to hold.</p>
-          <a class="hero-action button" href="#poems">Open the collection <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-art">
-          <div class="archival-sheet">
-            <div class="sheet-rule" aria-hidden="true"><span>REMEMBERING YOU</span><span>01 / MEMORY</span></div>
-            <img class="sheet-rose" src="assets/pressed-rose.svg" width="260" height="460" alt="" aria-hidden="true">
-            <p class="sheet-note">A rose saved<br>between the leaves<br>of a book.</p>
-            <figure class="book-cover">
-              <img src="assets/covers/poems-from-my-heart.jpg" width="330" height="494" alt="Poems From My Heart: a winding path through a field under a golden sky" fetchpriority="high">
-              <figcaption>iUniverse, 2015</figcaption>
-            </figure>
+    <!-- 1 · The cover as a window: its horizon becomes the page's horizon -->
+    <section class="landscape" aria-labelledby="poet-name">
+      <div class="horizon-row">
+        <div class="side side-west">
+          <div class="sky-part">
+            <p class="kicker">Poetry by</p>
+            <h1 id="poet-name"><span class="name-west">Miriam Kam</span><span class="name-rest"> Weisbrod</span></h1>
           </div>
-          <span class="sheet-shadow" aria-hidden="true"></span>
+          <div class="field-part">
+            <p class="book-line"><cite>Poems From My Heart</cite></p>
+            <p class="book-meta">Her first collection · iUniverse, 2015<br>Edited by Sheila N. Weisbrod</p>
+            <a class="button button-gold" href="https://www.iuniverse.com/en/bookstore/bookdetails/704539-poems-from-my-heart">Paperback or ebook <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="hero-baseline" aria-hidden="true"><span>01 — THE ROSE</span><span>02 — THE PORTRAIT</span><span>03 — THE RAINBOW</span></div>
+
+        <figure class="cover-window">
+          <img src="assets/covers/poems-from-my-heart.jpg" width="330" height="494" alt="Cover of Poems From My Heart by Miriam Kam Weisbrod, edited by Sheila N Weisbrod: a winding path through a grassy field toward a golden sky" fetchpriority="high">
+        </figure>
+
+        <div class="side side-east">
+          <div class="sky-part"><p class="name-east" aria-hidden="true">Weisbrod</p></div>
+          <div class="field-part">
+            <p class="also-label">Also by Miriam</p>
+            <ul class="also-list">
+              <li><a href="#children"><span>A Rainbow of Poetry for Children</span><small>Illustrated poems, 2015</small></a></li>
+              <li><a href="#listen"><span>Poems From My Heart, read aloud</span><small>Audiobook, 2026</small></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="trail-start">
+        <svg class="track" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path d="M14 0 C 14 40, 46 50, 46 100"/><path d="M40 0 C 40 40, 54 50, 54 100"/>
+        </svg>
+        <a class="waypoint" href="#poems">Into the poems <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <section class="specimens" id="poems" aria-labelledby="poems-title">
-      <div class="specimens-intro wrap">
-        <div><p class="section-label">Inside <cite>Poems From My Heart</cite></p><h2 id="poems-title">A rose in a book.<br><em>A portrait on a wall.</em></h2></div>
-        <p>Two poems. Two things held close. Miriam's verses find remembrance in the objects that remain.</p>
+    <!-- 2 · Along the path: the two poems the publisher's preview opens -->
+    <section class="path-section" id="poems" aria-labelledby="poems-title">
+      <div class="path-head">
+        <p class="kicker">Inside <cite>Poems From My Heart</cite></p>
+        <h2 id="poems-title">What the poems keep</h2>
+        <p>The publisher's preview opens two of Miriam's poems. Each holds on to a memory through something that lasted.</p>
       </div>
-      <div class="specimen-spread wrap">
-        <article class="poem-plate rose-plate">
-          <div class="plate-top"><span>01 / A PRESERVED FLOWER</span><span>POEMS FROM MY HEART</span></div>
-          <div class="rose-plate-image"><img src="assets/pressed-rose.svg" width="260" height="460" alt="" aria-hidden="true"><div class="rose-plate-scribble" aria-hidden="true">kept safe<br>between pages</div></div>
-          <div class="plate-bottom"><div><span class="plate-number">I.</span><h3>Remembering You</h3></div><p>A rose, pressed between the pages of a book, holds a memory close.</p></div>
+
+      <div class="path-walk">
+        <svg class="track" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path d="M46 0 C 46 120, 18 160, 18 300 C 18 430, 76 470, 76 620 C 76 760, 46 820, 46 1000"/>
+          <path d="M54 0 C 54 120, 26 160, 26 300 C 26 430, 84 470, 84 620 C 84 760, 54 820, 54 1000"/>
+        </svg>
+
+        <article class="station station-west">
+          <p class="station-no">I</p>
+          <h3>Remembering You</h3>
+          <p>A rose is pressed between the pages of a book and kept there as a memory.</p>
+          <p class="kept"><span>What is kept</span>a pressed rose</p>
         </article>
-        <article class="poem-plate portrait-plate">
-          <div class="plate-top"><span>02 / A REMEMBERED LIKENESS</span><span>POEMS FROM MY HEART</span></div>
-          <div class="portrait-display">
-            <div class="portrait-frame" aria-hidden="true"><span class="frame-sky"></span><span class="frame-mat">A PATRIOT</span></div>
-            <p class="portrait-side-note">What remains<br>on the wall.</p>
-          </div>
-          <div class="plate-bottom"><div><span class="plate-number">II.</span><h3>A Patriot</h3></div><p>A young man in uniform is remembered through the portrait that remains on the wall.</p></div>
+
+        <article class="station station-east">
+          <p class="station-no">II</p>
+          <h3>A Patriot</h3>
+          <p>A fallen serviceman is remembered through his painted portrait.</p>
+          <p class="kept"><span>What is kept</span>a portrait</p>
         </article>
       </div>
-      <div class="specimens-tail wrap"><p>Memory, nature, growing older and the wonder of living run through the collection.</p><a class="inline-link" href="#editions">Explore the print and ebook editions <span aria-hidden="true">↗</span></a></div>
+
+      <div class="path-end">
+        <p>Across the collection, the publisher describes poems of memory, nature, growing older and the passing of time. Only these two are previewed; the rest are in the book.</p>
+        <a class="text-link" href="https://www.iuniverse.com/en/bookstore/bookdetails/704539-poems-from-my-heart">Read them in <cite>Poems From My Heart</cite> <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
-    <section class="people-section" id="people" aria-labelledby="people-title">
-      <div class="people-inner wrap">
-        <div class="age-panel"><span>AT AGE</span><strong>95</strong><p>Miriam's poetry was published in 2015.</p></div>
-        <div class="people-story"><p class="section-label">A voice found on the page</p><h2 id="people-title">The poet.<br><em>And the hands that helped preserve her work.</em></h2><p>The publisher describes Miriam's turn to writing after the loss of her husband. Her poetry records the memories, natural world and everyday moments she chose to put into words.</p></div>
-        <div class="credit-ledger">
-          <div><span>POET &amp; AUTHOR</span><strong>Miriam Kam Weisbrod</strong><p>Author of both poetry collections.</p></div>
-          <div><span>EDITOR · ADULT COLLECTION</span><strong>Sheila N. Weisbrod</strong><p>Credited editor of the 2015 <cite>Poems From My Heart</cite>.</p></div>
+    <!-- 3 · The poet, and every hand on these books -->
+    <section class="late-light" id="poet" aria-labelledby="poet-title">
+      <div class="late-inner">
+        <p class="ninety-five" aria-hidden="true">95</p>
+        <div class="late-story">
+          <p class="kicker">The poet</p>
+          <h2 id="poet-title">She set out to publish at ninety‑five.</h2>
+          <p>According to her publishers, Miriam Kam Weisbrod began writing poetry after the death of her husband, and had written more than two hundred poems when she decided, at 95, to see them published.</p>
+          <p>Two collections followed in 2015: <cite>Poems From My Heart</cite> in May, and <cite>A Rainbow of Poetry for Children</cite> in June.</p>
+        </div>
+      </div>
+      <div class="credits" aria-labelledby="credits-title">
+        <h3 id="credits-title" class="credits-title">Who made these books</h3>
+        <dl class="credit-rows">
+          <div><dt>Miriam Kam Weisbrod</dt><dd><strong>Poet</strong> · both collections</dd></div>
+          <div><dt>Sheila N. Weisbrod</dt><dd><strong>Editor</strong> · <cite>Poems From My Heart</cite>, 2015<br><strong>Publisher</strong> · the 2026 audiobook</dd></div>
+          <div><dt>Barbara Silbert</dt><dd><strong>Illustrator</strong> · <cite>A Rainbow of Poetry for Children</cite></dd></div>
+          <div><dt>Eleanor Vance</dt><dd><strong>Narrator</strong> · the 2026 audiobook</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 4 · The path becomes a rainbow, colored in like the book's own pages -->
+    <section class="rainbow-section" id="children" aria-labelledby="children-title">
+      <div class="arc-stage">
+        <svg class="rainbow" viewBox="0 -16 1000 446" aria-hidden="true" focusable="false">
+          <g class="bands" fill="none" stroke-width="23">
+            <path class="b1" stroke="#e5412f" d="M58.5 440 A441.5 441.5 0 0 1 941.5 440"/>
+            <path class="b2" stroke="#f2922c" d="M81.5 440 A418.5 418.5 0 0 1 918.5 440"/>
+            <path class="b3" stroke="#f6cf3d" d="M104.5 440 A395.5 395.5 0 0 1 895.5 440"/>
+            <path class="b4" stroke="#7cbf45" d="M127.5 440 A372.5 372.5 0 0 1 872.5 440"/>
+            <path class="b5" stroke="#36a3d9" d="M150.5 440 A349.5 349.5 0 0 1 849.5 440"/>
+            <path class="b6" stroke="#3c5db2" d="M173.5 440 A326.5 326.5 0 0 1 826.5 440"/>
+            <path class="b7" stroke="#8d58b4" d="M196.5 440 A303.5 303.5 0 0 1 803.5 440"/>
+          </g>
+          <g class="outlines" fill="none" stroke="#1f2f7a" stroke-width="1.6">
+            <path d="M47 440 A453 453 0 0 1 953 440"/><path d="M70 440 A430 430 0 0 1 930 440"/><path d="M93 440 A407 407 0 0 1 907 440"/><path d="M116 440 A384 384 0 0 1 884 440"/><path d="M139 440 A361 361 0 0 1 861 440"/><path d="M162 440 A338 338 0 0 1 838 440"/><path d="M185 440 A315 315 0 0 1 815 440"/><path d="M208 440 A292 292 0 0 1 792 440"/>
+          </g>
+        </svg>
+        <div class="arc-title">
+          <p class="kicker">Her second collection</p>
+          <h2 id="children-title">A Rainbow of Poetry for&nbsp;Children</h2>
+          <p class="arc-sub">With Pictures and Coloring Book</p>
+        </div>
+        <ol class="arc-poems" aria-label="Poem titles from the publisher's preview">
+          <li class="p1"><strong>Who is He?</strong><span>a circus clown</span></li>
+          <li class="p2"><strong>Fairyland</strong><span>a child's dream</span></li>
+          <li class="p3"><strong>I Have</strong><span>animals, a garden, the world close by</span></li>
+        </ol>
+      </div>
+
+      <div class="rainbow-book">
+        <figure class="rainbow-cover">
+          <img src="assets/covers/a-rainbow-of-poetry-for-children.jpg" width="881" height="1140" alt="Cover of A Rainbow of Poetry for Children: illustrated children run along a rainbow under balloons and birds" loading="lazy">
+        </figure>
+        <div class="rainbow-copy">
+          <p class="rainbow-lede">Whimsical poems about toys, nature, animals and imaginary characters, with pictures to look at and pages to color.</p>
+          <p class="byline">Poetry by Miriam Kam Weisbrod<br>Illustrations by Barbara Silbert</p>
+          <p class="facts">Archway Publishing · June 2015 · 68 pages · 8.5&nbsp;×&nbsp;11&nbsp;in</p>
+          <a class="button button-navy" href="https://www.archwaypublishing.com/en/bookstore/bookdetails/706570-a-rainbow-of-poetry-for-children">Find it at Archway Publishing <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="children-section" id="children" aria-labelledby="children-title">
-      <div class="rainbow-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-      <div class="children-inner wrap">
-        <p class="children-index">THE OTHER SIDE OF THE PAGE <span>02 / FOR YOUNGER READERS</span></p>
-        <div class="children-lead">
-          <div class="children-heading">
-            <p class="section-label">A second collection, a different kind of play</p>
-            <h2 id="children-title"><span>A Rainbow</span><span>of Poetry</span><em>for Children</em></h2>
-            <p>With Pictures and Coloring Book</p>
+    <!-- 5 · The same poems, in a voice -->
+    <section class="dusk" id="listen" aria-labelledby="listen-title">
+      <div class="dusk-inner">
+        <figure class="audio-art">
+          <img src="assets/covers/poems-from-my-heart-audiobook-2026.jpg" width="512" height="512" alt="Square artwork for the 2026 audiobook of Poems From My Heart: the same golden field, widened" loading="lazy">
+        </figure>
+        <div class="audio-copy">
+          <p class="kicker">Audiobook edition · 2026</p>
+          <h2 id="listen-title"><cite>Poems From My Heart</cite>, read aloud</h2>
+          <div class="runtime" aria-label="Unabridged running time: 49 minutes 46 seconds">
+            <span class="rt-start" aria-hidden="true">0:00</span><span class="rt-line" aria-hidden="true"></span><span class="rt-end" aria-hidden="true">49:46</span>
           </div>
-          <figure class="rainbow-book"><img src="assets/covers/a-rainbow-of-poetry-for-children.jpg" width="881" height="1140" alt="A Rainbow of Poetry for Children: illustrated children, balloons and a colorful rainbow" loading="lazy"><figcaption>Poetry by Miriam Kam Weisbrod<br>Illustrations by Barbara Silbert</figcaption></figure>
-        </div>
-        <div class="children-bottom">
-          <p>Clowns, daydreams and animals join Miriam's second collection. Here, the poems invite younger readers to look, imagine and color.</p>
-          <div class="children-index-list" aria-label="Featured poem titles from the publisher preview">
-            <div><span>01</span><strong>Who is He?</strong><p>A circus clown comes into view.</p></div>
-            <div><span>02</span><strong>Fairyland</strong><p>A child's dream takes shape.</p></div>
-            <div><span>03</span><strong>I Have</strong><p>Animals, a garden and familiar wonders.</p></div>
-          </div>
-          <a class="children-action" href="https://www.archwaypublishing.com/en/bookstore/bookdetails/706570-a-rainbow-of-poetry-for-children">Find the children's book at Archway <span aria-hidden="true">↗</span></a>
+          <dl class="audio-facts">
+            <div><dt>Narrated by</dt><dd>Eleanor Vance</dd></div>
+            <div><dt>Published by</dt><dd>Sheila Weisbrod</dd></div>
+            <div><dt>Released</dt><dd>August 2026 · unabridged</dd></div>
+          </dl>
+          <a class="button button-gold" href="https://play.google.com/store/audiobooks/details/Miriam_Kam_Weisbrod_Poems_from_my_Heart?id=AQAAAEAGeR05CM">Listen on Google Play <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="audio-section" id="listen" aria-labelledby="audio-title">
-      <div class="audio-inner wrap">
-        <div class="audio-head"><span>03 / LISTENING EDITION</span><p>The poems, in another form.</p></div>
-        <figure class="audio-cover"><img src="assets/covers/poems-from-my-heart-audiobook-2026.jpg" width="512" height="512" alt="The square golden-field artwork for the 2026 Poems From My Heart audiobook" loading="lazy"><figcaption>Audiobook · 2026</figcaption></figure>
-        <div class="audio-story"><h2 id="audio-title">Hear the words<br><em>held on the page.</em></h2><p><cite>Poems From My Heart</cite> is also available as an unabridged audiobook. This edition is narrated by Eleanor Vance and published by Sheila Weisbrod.</p><a class="inline-link" href="https://play.google.com/store/audiobooks/details/Miriam_Kam_Weisbrod_Poems_from_my_Heart?id=AQAAAEAGeR05CM">Explore the audiobook on Google Play <span aria-hidden="true">↗</span></a></div>
-        <div class="audio-duration"><strong>49</strong><span>minutes</span></div>
+    <!-- 6 · The shelf: every edition, standing on one line -->
+    <section class="shelf-section" id="books" aria-labelledby="books-title">
+      <div class="shelf-head">
+        <p class="kicker">Editions</p>
+        <h2 id="books-title">Where to find the books</h2>
       </div>
-    </section>
-
-    <section class="editions-section" id="editions" aria-labelledby="editions-title">
-      <div class="editions-inner wrap">
-        <div class="editions-title"><span class="section-label">04 / THE BOOKS</span><h2 id="editions-title">Take the poems<br><em>with you.</em></h2><p>Poetry by Miriam Kam Weisbrod. The adult collection edited by Sheila N. Weisbrod.</p></div>
-        <div class="edition-list">
-          <div class="primary-edition"><span>PRINT &amp; DIGITAL</span><h3>Poems From My Heart</h3><p>iUniverse · 2015 · 50 pages</p><a class="edition-button" href="https://www.iuniverse.com/en/bookstore/bookdetails/704539-poems-from-my-heart">Find the paperback or ebook <span aria-hidden="true">↗</span></a><small>Paperback ISBN 9781491767900<br>Ebook ISBN 9781491768006</small></div>
-          <a class="edition-row" href="#children"><span>FOR CHILDREN</span><strong>A Rainbow of Poetry for Children</strong><span aria-hidden="true">↑</span></a>
-          <a class="edition-row" href="#listen"><span>AUDIOBOOK · 2026</span><strong>Poems From My Heart, read aloud</strong><span aria-hidden="true">↑</span></a>
-        </div>
-      </div>
-      <div class="closing-inscription wrap"><span aria-hidden="true">✳</span><p>From the heart, to the page.</p></div>
+      <ul class="shelf">
+        <li>
+          <div class="spine"><img src="assets/covers/poems-from-my-heart.jpg" width="330" height="494" alt="" loading="lazy"></div>
+          <p class="format">Paperback &amp; ebook</p>
+          <h3><cite>Poems From My Heart</cite></h3>
+          <p class="details">Miriam Kam Weisbrod, edited by Sheila N. Weisbrod · iUniverse, 2015 · 50 pages</p>
+          <p class="isbn">ISBN 9781491767900 (paperback)<br>ISBN 9781491768006 (ebook)</p>
+          <a class="button button-ink" href="https://www.iuniverse.com/en/bookstore/bookdetails/704539-poems-from-my-heart">iUniverse <span aria-hidden="true">↗</span></a>
+        </li>
+        <li>
+          <div class="spine"><img src="assets/covers/a-rainbow-of-poetry-for-children.jpg" width="881" height="1140" alt="" loading="lazy"></div>
+          <p class="format">Paperback &amp; ebook · for children</p>
+          <h3><cite>A Rainbow of Poetry for Children</cite></h3>
+          <p class="details">Miriam Kam Weisbrod, illustrated by Barbara Silbert · Archway Publishing, 2015 · 68 pages</p>
+          <p class="isbn">ISBN 9781480818934 (paperback)<br>ISBN 9781480818941 (ebook)</p>
+          <a class="button button-ink" href="https://www.archwaypublishing.com/en/bookstore/bookdetails/706570-a-rainbow-of-poetry-for-children">Archway Publishing <span aria-hidden="true">↗</span></a>
+        </li>
+        <li>
+          <div class="spine"><img src="assets/covers/poems-from-my-heart-audiobook-2026.jpg" width="512" height="512" alt="" loading="lazy"></div>
+          <p class="format">Audiobook</p>
+          <h3><cite>Poems From My Heart</cite></h3>
+          <p class="details">Narrated by Eleanor Vance · published by Sheila Weisbrod, 2026 · 49 min</p>
+          <p class="isbn">ISBN 9780466830687</p>
+          <a class="button button-ink" href="https://play.google.com/store/audiobooks/details/Miriam_Kam_Weisbrod_Poems_from_my_Heart?id=AQAAAEAGeR05CM">Google Play <span aria-hidden="true">↗</span></a>
+        </li>
+      </ul>
     </section>
   </main>
-  <footer class="site-footer wrap"><div><strong>Miriam Kam Weisbrod</strong><span>Poetry · Edited by Sheila N. Weisbrod where credited</span></div><a href="#top">Back to top <span aria-hidden="true">↑</span></a><p>Book cover imagery: iUniverse, Archway Publishing and Google Play. Children's cover illustrations: Barbara Silbert.</p></footer>
+
+  <footer class="site-footer">
+    <p class="footer-name">Poems by Miriam Kam Weisbrod</p>
+    <p class="footer-note">Cover images: iUniverse (2015), Archway Publishing (2015, illustrations by Barbara Silbert) and Google Play (2026 audiobook).</p>
+    <a class="text-link" href="#top">Back to the horizon <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
